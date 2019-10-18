@@ -1,5 +1,6 @@
 class Post < ApplicationRecord
-  validates :author, presence: true
+  belongs_to :user
+  
   validates :body, presence: true
-  validates :title, presence: true, lenght: {maximum: 200}
+  validates :title, presence: true, length: {maximum: 200}
 end
