@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+
 <h1>Блог</h1>
 
 <%@posts.each do |post|%>
@@ -8,6 +9,7 @@
 <p>  <%= post.body %></p>
   <small><%= post.user&.login %></small>
   <%= l(post.created_at, format: :long) %>
+  <%= link_to 'Подробнее', post %>
 </div>
 <%end%>
 
