@@ -1,7 +1,6 @@
 body {
-  background-color: #fff;
+  background-color: #efe8af;
   color: #333;
-  margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -20,15 +19,16 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #f2f2f2;
+  text-decoration: none;
 
   &:visited {
-    color: #666;
+    color: #grey;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #000;
+    background-color: #ddd;
+    color: black;
   }
 }
 
@@ -81,4 +81,58 @@ div {
 
 label {
   display: block;
+}
+
+
+
+.menu {
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 3px 3px 15px;
+  list-style-type: none;
+  position: fixed;
+  width: 99.2%;
+}
+
+
+.menu  a {
+  font-size: 25px;
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.active {
+  background-color: #4CAF50;
+}
+.button{
+  background-color: #333;
+  border: none;
+  color: #f2f2f2;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.grid-container {
+  display:grid;
+  grid-template-columns: 25% 60% 15%;
+  padding: 10px;
+}
+.grid-item {
+  overflow-x:hidden;
+  padding: 5px;
+  font-size: 14px;
+  text-align: left;
 }

@@ -1,16 +1,24 @@
 <p id="notice"><%= notice %></p>
-
-
-<h1>Блог</h1>
-
-<%@posts.each do |post|%>
-<div>
-  <h3><%=post.title%></h3>
-<p>  <%= post.body %></p>
-  <small><%= post.user&.login %></small>
-  <%= l(post.created_at, format: :long) %>
-  <%= link_to 'Подробнее', post %>
+<div class="menu">
+  <a href="http://localhost:3000">Домой</a>
+  <a class="active"href="http://localhost:3000/posts#">Блог</a>
+  <a href="http://localhost:3000/users#">Пользователи</a>
+  <a href="http://localhost:3000/login#" style="float:right">Вход</a>
 </div>
+<div class="button" style="margin-top:100px">
+  <%= link_to 'Новый пост', new_post_path %>
+  </div>
+<div>
+  <%@posts.each do |post|%>
+  <hr>
+  <div class="grid-container">
+    <div class="grid-item"><b><%=post.title%></b></div>
+    <div class="grid-item"><%= post.body %></div>
+    <div class="grid-item">User:<%= post.user&.login %><p><%= l(post.created_at, format: :long) %></p><p class="button"><%= link_to 'Подробнее', post %></p></div>
+  </div>
+  </div>
 <%end%>
-
-<%= link_to 'New Post', new_post_path %>
+<hr>
+<div class="button">
+  <%= link_to 'Новый пост', new_post_path %>
+  </div>

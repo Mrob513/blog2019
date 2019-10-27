@@ -55,3 +55,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'faker'
 gem 'rails-i18n'
 gem 'bcrypt', '~> 3.1.7'
+gem 'wdm', '>= 0.1.0'
