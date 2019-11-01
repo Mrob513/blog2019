@@ -31,13 +31,18 @@ a {
     color: black;
   }
 }
-
 th {
+
   padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
+  border-bottom-style:solid;
 }
 
 td {
-  padding: 0 5px 7px;
+  font-size: 16px;
+  padding: 10px 40px 0px;
+  border-bottom-style:solid;
 }
 
 div {
@@ -124,6 +129,20 @@ label {
   margin-top:30px;
   cursor: pointer;
   text-decoration: none;
+  margin-left: 2px;
+}
+.userbutton{
+  background-color: #333;
+  border: none;
+  color: #f2f2f2;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:10px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 8px;
 }
 .grid-container {
   display:grid;
@@ -135,4 +154,16 @@ label {
   padding: 5px;
   font-size: 14px;
   text-align: left;
+}
+.usertable{
+  padding-top: 130px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+.login{
+  font-size: 16px;
+  margin-left: 20px;
+}
+.enter{
+  font-size: 30px;
 }

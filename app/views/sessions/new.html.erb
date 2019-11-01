@@ -1,10 +1,20 @@
-<p id="notice"><%= notice %></p>
+<div class="menu">
+  <a href="http://localhost:3000">Домой</a>
+  <a href="http://localhost:3000/posts#">Блог</a>
+  <a href="http://localhost:3000/users#">Пользователи</a>
+  <a class="active" href="http://localhost:3000/login#" style="float:right">Вход</a>
+</div>
+<br />
+<div class="login"style="margin-top:100px">
+  <p><b class="enter">Вход</b>
 
-
-<%= form_tag session_path do %>
-  <%= label_tag :login, 'Имя пользователя' %>
-  <%= text_field_tag :login %>
-  <%= label_tag :password, 'Пароль' %>
-  <%= password_field_tag :password %>
-  <%= submit_tag 'Войти' %>
+    </p>
+  <p id="notice"><%= notice %></p>
+  <%= form_tag session_path do %>
+    <%= label_tag :login, 'Имя пользователя' %>
+    <%= text_field_tag :login %>
+    <%= label_tag :password, 'Пароль' %>
+    <%= password_field_tag :password %>
+    <%= submit_tag 'Войти' %>
+  </div>
 <%end%>
