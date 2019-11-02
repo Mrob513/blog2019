@@ -95,8 +95,8 @@ label {
   background-color: #333;
   box-shadow: 3px 3px 15px;
   list-style-type: none;
-  position: fixed;
-  width: 99.2%;
+  position: static;
+  width: 100%;
 }
 
 
@@ -112,11 +112,8 @@ label {
 }
 
 .menu a:hover {
-  background-color: #ddd;
+  background-color: #47b749;
   color: black;
-}
-.active {
-  background-color: #4CAF50;
 }
 .button{
   background-color: #333;
@@ -156,7 +153,7 @@ label {
   text-align: left;
 }
 .usertable{
-  padding-top: 130px;
+  padding-top: 30px;
   padding-left: 20px;
   font-size: 25px;
 }
@@ -166,4 +163,18 @@ label {
 }
 .enter{
   font-size: 30px;
+}
+.currentUser{
+  padding-top: 20px;
+  font-size: 16px;
+}
+.notice{
+  color: red;
+  font-size: 20px;
+}
+.zd{
+  color: black;
+  padding-top: 20px;
+  font-size: 30px;
+  font-style: italic;
 }

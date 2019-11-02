@@ -1,13 +1,8 @@
-
-<div class="menu">
-  <a href="http://localhost:3000">Домой</a>
-  <a class="active"href="http://localhost:3000/posts#">Блог</a>
-  <a href="http://localhost:3000/users#">Пользователи</a>
-  <a href="http://localhost:3000/login#" style="float:right">Вход</a>
-</div>
-<div class="button" style="margin-top:100px">
+<p>
+  <div class="button">
   <%= link_to 'Новый пост', new_post_path %>
   </div>
+  </p>
 <div>
   <%@posts.each do |post|%>
   <hr>
